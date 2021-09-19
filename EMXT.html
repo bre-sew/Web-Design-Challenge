@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    
+    <link rel="icon" href="https://www.pinclipart.com/picdir/middle/169-1698872_dove-clipart-flame-transparent-background-fire-icon-png.png">
+    
+    <title>Weather & Wildfires</title>
+</head>
+
+<body>
+    
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Weather & Wildfires</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="Comparison.html">Comparison</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Data.html">Data</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Plots
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="DX90.html">DX90</a></li>
+                            <li><a class="dropdown-item" href="EMXT.html">EMXT</a></li>
+                            <li><a class="dropdown-item" href="PRCP.html">PRCP</a></li>
+                            <li><a class="dropdown-item" href="TMAX.html">TMAX</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 class="display-4">EMXT vs. Fire Extent</h1>
+                <hr class="my-4">
+                <img src="Resources/EMXT-Extent.png" class="img-fluid" alt="EMXT" style="padding-bottom: 20px;">
+                <p>This graph shows the relationship between the extreme maximum daily temperature per California County in 
+                    degrees Fahrenheit and the total acres burned by wildfire. The data represents the period 
+                    from 2013 to 2020. The r-value is 0.43, which means there is a weak correlation between EMXT and 
+                    fire extent.
+                    </p>
+                    <br>
+                <p class="fst-italic">Sources: California Department of Forestry and Fire Protection (CAL FIRE) National Oceanic and 
+                    Atmospheric Administration (NOAA) Federal Communications Commission (FCC) Census API</p>
+            </div>
+            <div class="col-md-4">
+                <h1 class="display-5"><br>Visualizations</h1>
+                <div class="container">
+                    <div class="row" style="padding-bottom: 20px; padding-right: 20px; padding-left: 20px;">
+                        <div class="col-sm-12">
+                            <a href="DX90.html">
+                            <img class="img-fluid" src="Resources/DX90-Extent.png" alt="DX90 Graph">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-bottom: 20px; padding-right: 20px; padding-left: 20px;">
+                    <span class="border border-3 border-dark">
+                        <div class="col-sm-12">
+                            <a href="EMXT.html">
+                            <img class="img-fluid" src="Resources/EMXT-Duration.png" alt="EMXT Graph">
+                            </a>
+                        </div>
+                    </span>
+                    </div>
+                    <div class="row" style="padding-bottom: 20px; padding-right: 20px; padding-left: 20px;">
+                        <div class="col-sm-12">
+                            <a href="PRCP.html">
+                            <img class="img-fluid" src="Resources/PRCP-Extent.png" alt="PRCP Graph">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-bottom: 20px; padding-right: 20px; padding-left: 20px;">
+                        <div class="col-sm-12">
+                            <a href="TMAX.html">
+                                <img class="img-fluid" src="Resources/TMAX-Extent.png" alt="TMAX Graph">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+    
+</body>
+
+</html>

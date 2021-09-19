@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    
+    <link rel="icon" href="https://www.pinclipart.com/picdir/middle/169-1698872_dove-clipart-flame-transparent-background-fire-icon-png.png">
+    
+    <title>Weather & Wildfires</title>
+</head>
+
+<body>
+    
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand active" href="index.html">Weather & Wildfires</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Comparison.html">Comparison</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Data.html">Data</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="Comparison.html" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Plots
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="DX90.html">DX90</a></li>
+                            <li><a class="dropdown-item" href="EMXT.html">EMXT</a></li>
+                            <li><a class="dropdown-item" href="PRCP.html">PRCP</a></li>
+                            <li><a class="dropdown-item" href="TMAX.html">TMAX</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 class="display-4">Analysis Summary:<br>California Weather & Wildfires</h1>
+                <hr class="my-4">
+                <img src="https://www.fresnobee.com/latest-news/oewnev/picture253495194/alternates/LANDSCAPE_1140/CaliforniaWildfires.JPG" class="img-fluid" alt="CA Fires" style="padding-bottom: 20px;">
+                <p>The purpose of this project was to test for correlation between historical (2013-2020) 
+                    California wildfire count and expanse (acres burned) and historical weather data, specifically 
+                    air temperature, precipitation, wind, and land temperature.</p>
+                    <br>
+                <p>There is far less correlation between the weather and wildfire variables than expected. 
+                    In most cases, there was little to no correlation. In a couple instances, 
+                    there was a moderate correlation.</p>
+                    <br>
+                <p>Relationships were analyzed between the following variables:</p>
+                <ul class="list-unstyled">
+                    <ul>
+                    <li>Wildfire extent – acres burned</li>
+                    <li>DX90 – number of days over 90˚F</li>
+                    <li>EMXT – extreme maximum daily temperature (˚F)</li>
+                    <li>PRCP – total annual precipitation (in.)</li>
+                    <li>TMAX – average annual maximum temperature (˚F)</li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h1 class="display-5"><br>Visualizations</h1>
+                <div class="container">
+                    <div class="row" style="padding-bottom: 20px; padding-right: 20px; padding-left: 20px;">
+                        <div class="col-sm-12">
+                            <div class="title">DX90 vs. Fire Extent</div>
+                            <a href="DX90.html">
+                            <img class="img-fluid" src="Resources/DX90-Extent.png" alt="DX90 Graph">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-bottom: 20px; padding-right: 20px; padding-left: 20px;">
+                        <div class="col-sm-12">
+                            <div class="title">EMXT vs. Fire Extent</div>
+                            <a href="EMXT.html">
+                            <img class="img-fluid" src="Resources/EMXT-Duration.png" alt="EMXT Graph">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-bottom: 20px; padding-right: 20px; padding-left: 20px;">
+                        <div class="col-sm-12">
+                            <div class="title">PRCP vs. Fire Extent</div>
+                            <a href="PRCP.html">
+                            <img class="img-fluid" src="Resources/PRCP-Extent.png" alt="PRCP Graph">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-bottom: 20px; padding-right: 20px; padding-left: 20px;">
+                        <div class="col-sm-12">
+                            <div class="title">TMAX vs. Fire Extent</div>
+                            <a href="TMAX.html">
+                                <img class="img-fluid" src="Resources/TMAX-Extent.png" alt="TMAX Graph">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+    
+</body>
+
+</html>
